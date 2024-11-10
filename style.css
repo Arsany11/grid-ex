@@ -1,3 +1,69 @@
-.item:nth-of-type(2){
-    color: red;
+body {
+    background-color: aliceblue;
+    color: #fff;
+    padding: 50px ;
+}
+
+.container {
+    display: grid;
+    gap: 20px;
+    grid-template-columns: repeat(4,1fr);
+}
+.Card{
+    border-radius: 10px;
+    padding: 20px;
+}
+.Card .head img {
+    border-radius: 50%;
+    height: 50px;
+    margin: 10px;
+    border: solid 2px white;
+}
+.head-title h2
+{
+    margin-bottom: 0;
+}
+.head-title h5 {
+    margin: 0;
+    opacity: 0.5;
+}
+.Card .main {
+    font-size: 20px;
+    font-weight: 600;
+}
+.Card .title {
+    font-weight: 300;
+    opacity: 0.7;
+}
+.Card:nth-of-type(1) {
+    background-color: rgb(105, 18, 186);
+    grid-column: 1/3;
+    
+}
+
+.Card:nth-of-type(2) {
+    background-color: rgba(104, 103, 103, 0.551);
+
+}
+
+.Card:nth-of-type(3) {
+    background-color: rgb(238, 238, 238);
+    color: #282626;
+    grid-row: 1/3;
+    grid-column: 4;
+}
+
+.Card:nth-of-type(5) {
+    background-color: rgb(17, 5, 86);
+    grid-column: 2/4;
+}
+
+.Card:nth-of-type(4){
+    background-color: rgb(238, 238, 238);
+    color: #282626;
+    
+}
+
+.head {
+    display: flex;
 }
